@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 08</title>
+    <style>
+        *{
+            font-size: 16px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            height: 15rem;
+            border: 1px solid blue;
+            display: flex;
+        }
+        .bloco{
+            background-color: yellow;
+            color: white;
+            padding: 1rem;
+            margin: 0.5rem;
+            width: 5rem;
+            height: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+    <div class="bloco"></div>
+    <script>
+        /*Estrutura sequencial:
+        comandos de saida.
+        Declaracao de variavel
+        Comando de entrada
+        Template String
+        */
+       let num1 = parseInt(prompt("Informe o primeiro numero:"));
+       num2 = prompt("Informe o segundo numero:");
+
+       num1 = parseInt(num1);
+       num2 = parseInt(num2);
+
+       soma = num1 +num2;
+       subtracao = num1 - num2;
+       multiplicacao = num1 * num2;
+       divisao = num1 / num2;
+       resto = num1 % num2;
+
+       document.write(`<div class="bloco">log_2(${num}) = ${Math.log(num)}</div>`);
+       document.write(`<div class="bloco">log_10(${num}) = ${Math.log10(num)}</div>`);
+       document.write(`<div class="bloco">log_e(${Math.E}) = ${Math.log10(num)}</div>`);
+       document.write(`<div class="bloco">raiz(${num}) = ${Math.sqrt(num)}</div>`);
+       document.write(`<div class="bloco">${num} ^ 3 = ${Math.pow(num, 3)}</div>`);
+       document.write(`<div class="bloco">raiz(${num}) = ${Math.pow(num, .5)}</div>`);
+    </script>
+    </div>
+    </body>
+</body>
+</html>
